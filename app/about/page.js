@@ -17,12 +17,12 @@ export default function About() {
         </h1>
 
         <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-          WeOwls is more than just a platform — it's a movement built around learning, curiosity, and collaboration. 
+          WeOwls is more than just a platform — its a movement built around learning, curiosity, and collaboration. 
           We believe knowledge should be shared, not siloed.
         </p>
 
         <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-          Whether you're an expert or just getting started, WeOwls offers a welcoming space to ask questions, exchange ideas, and grow together.
+          Whether you are an expert or just getting started, WeOwls offers a welcoming space to ask questions, exchange ideas, and grow together.
           Our mission is to connect curious minds and empower communities through shared wisdom.
         </p>
 
