@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -6,7 +7,7 @@ export default function About() {
       <main className="max-w-3xl text-center sm:text-left flex flex-col gap-8 items-center sm:items-start">
         <Image
           className="dark:invert"
-          src="/weowls-logo.svg" // Replace with your logo
+          src="/weowls-logo.svg"
           alt="WeOwls logo"
           width={160}
           height={36}
@@ -17,7 +18,7 @@ export default function About() {
         </h1>
 
         <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-          WeOwls is more than just a platform — its a movement built around learning, curiosity, and collaboration. 
+          WeOwls is more than just a platform — it's a movement built around learning, curiosity, and collaboration. 
           We believe knowledge should be shared, not siloed.
         </p>
 
@@ -31,18 +32,16 @@ export default function About() {
         </p>
 
         <div className="flex gap-4 mt-6">
-          <a
-            href="/signup"
-            className="bg-foreground text-background px-6 py-3 rounded-full text-sm font-medium hover:bg-[#383838] dark:hover:bg-[#ccc]"
-          >
-            Join Now
-          </a>
-          <a
-            href="/"
-            className="border border-black/[.08] dark:border-white/[.145] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a]"
-          >
-            Back to Home
-          </a>
+          <Link href="/signup">
+            <span className="bg-foreground text-background px-6 py-3 rounded-full text-sm font-medium hover:bg-[#383838] dark:hover:bg-[#ccc] cursor-pointer">
+              Join Now
+            </span>
+          </Link>
+          <Link href="/">
+            <span className="border border-black/[.08] dark:border-white/[.145] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] cursor-pointer">
+              Back to Home
+            </span>
+          </Link>
         </div>
       </main>
 
